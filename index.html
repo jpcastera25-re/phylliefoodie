@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Phyllie’s Foodie’s is a warm, home-style bakery landing page featuring fresh-baked breads and jams coming soon."
+    />
+    <title>Phyllie’s Foodie’s | Fresh-Baked Breads</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Phyllie’s Foodie’s site header">
+      <a class="brand" href="#top" aria-label="Phyllie’s Foodie’s home">
+        <span class="brand-mark" aria-hidden="true">PF</span>
+        <span>Phyllie’s Foodie’s</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#menu">Breads</a>
+        <a href="#jams">Jams</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Small-batch comfort from Phyllis</p>
+          <h1 id="hero-title">Fresh-baked breads, made with heart.</h1>
+          <p class="hero-text">
+            Phyllie’s Foodie’s is starting small with warm, homemade breads baked
+            with care — from classic banana bread to cozy pumpkin bread and
+            fresh Dutch oven loaves.
+          </p>
+          <div class="hero-actions" aria-label="Bakery page actions">
+            <a class="button button-primary" href="#menu">See the Menu</a>
+            <a class="button button-secondary" href="#contact">Ask About an Order</a>
+          </div>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Illustrated warm bread basket and jam jar on a cozy kitchen counter">
+          <div class="fresh-badge">Fresh this week</div>
+          <div class="bread-basket" aria-hidden="true">
+            <span class="loaf loaf-one"></span>
+            <span class="loaf loaf-two"></span>
+            <span class="loaf loaf-three"></span>
+          </div>
+          <div class="counter-card">
+            <span class="jam-icon" aria-hidden="true">🍓</span>
+            <div>
+              <p class="counter-title">Breads now</p>
+              <p class="counter-text">Jams coming soon</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section-shell" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <p class="eyebrow">Quickbreaks / Breads</p>
+          <h2 id="menu-title">Featured breads from Phyllie’s kitchen</h2>
+          <p>
+            Cozy loaves for breakfast tables, care packages, and anytime a warm
+            slice sounds just right.
+          </p>
+        </div>
+
+        <div class="bread-grid">
+          <article class="bread-card">
+            <div class="bread-art banana" role="img" aria-label="Golden banana bread placeholder illustration">🍌</div>
+            <div class="card-body">
+              <span class="tag">Classic</span>
+              <h3>Banana Bread</h3>
+              <p>A soft, classic loaf with rich banana flavor — simple, cozy, and made to share.</p>
+            </div>
+          </article>
+
+          <article class="bread-card">
+            <div class="bread-art pumpkin" role="img" aria-label="Pumpkin bread placeholder illustration">🎃</div>
+            <div class="card-body">
+              <span class="tag">Seasonal</span>
+              <h3>Pumpkin Bread</h3>
+              <p>A warm seasonal favorite with comforting spice and a soft, tender crumb.</p>
+            </div>
+          </article>
+
+          <article class="bread-card">
+            <div class="bread-art yeast" role="img" aria-label="Homemade yeast bread placeholder illustration">🍞</div>
+            <div class="card-body">
+              <span class="tag">Homemade Loaf</span>
+              <h3>Yeast Bread</h3>
+              <p>A traditional homemade loaf, perfect for slicing, sharing, and pairing with butter or jam.</p>
+            </div>
+          </article>
+
+          <article class="bread-card">
+            <div class="bread-art dutch" role="img" aria-label="Rustic Dutch oven bread placeholder illustration">🥖</div>
+            <div class="card-body">
+              <span class="tag">Fresh Loaf</span>
+              <h3>Dutch Oven Bread</h3>
+              <p>A rustic round loaf with a golden crust and soft center.</p>
+            </div>
+          </article>
+
+          <article class="bread-card">
+            <div class="bread-art french" role="img" aria-label="French bread placeholder illustration">🥖</div>
+            <div class="card-body">
+              <span class="tag">Fresh Favorite</span>
+              <h3>French Bread</h3>
+              <p>A simple, fresh-baked favorite with a crisp outside and soft inside.</p>
+            </div>
+          </article>
+
+          <article class="bread-card designer-card">
+            <div class="ribbon">Designer’s Corner</div>
+            <div class="bread-art split" role="img" aria-label="Banana split bread placeholder illustration with cherry and chocolate accents">🍒</div>
+            <div class="card-body">
+              <span class="tag">Playful Special</span>
+              <h3>Designer’s Corner: Banana Split Bread</h3>
+              <p>A playful twist on banana bread with cherries, pineapple, and chocolate for a dessert-style loaf.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="jam-banner section-shell" id="jams" aria-labelledby="jams-title">
+        <div class="jam-copy">
+          <p class="eyebrow">Sweet spreads in the works</p>
+          <h2 id="jams-title">Jams Coming Soon</h2>
+          <p>
+            Fresh jams are on the way. Soon, Phyllie’s Foodie’s will pair homemade
+            breads with sweet spreads made for breakfast tables, care packages,
+            and cozy weekends.
+          </p>
+        </div>
+        <a class="button button-secondary" href="#contact">Check Back Soon</a>
+      </section>
+
+      <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+        <div class="recipe-card" aria-hidden="true">
+          <span>Recipe note</span>
+          <strong>Warm loaves, thoughtful flavors, lots of care.</strong>
+        </div>
+        <div>
+          <p class="eyebrow">About Phyllie</p>
+          <h2 id="about-title">A small kitchen project by Phyllis</h2>
+          <p>
+            Phyllis started Phyllie’s Foodie’s with a simple idea: bake the kind
+            of food people are excited to share. What began with homemade breads
+            for friends, coworkers, and family is now growing into a small kitchen
+            project filled with fresh loaves, thoughtful flavors, and a whole lot
+            of care.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Simple ordering</p>
+          <h2 id="contact-title">Ask about availability</h2>
+          <p>
+            Phyllie’s Foodie’s is starting small. For now, orders and questions
+            can be handled directly. Contact details are coming soon and easy to
+            replace when Phyllis is ready.
+          </p>
+        </div>
+
+        <div class="contact-card" aria-label="Coming soon contact options">
+          <a class="contact-link" href="#!" aria-label="Call or text contact coming soon">
+            <span>Call / Text</span>
+            <strong>Coming soon</strong>
+          </a>
+          <a class="contact-link" href="#!" aria-label="Email contact coming soon">
+            <span>Email</span>
+            <strong>Coming soon</strong>
+          </a>
+          <a class="contact-link" href="#!" aria-label="Social media contact coming soon">
+            <span>Instagram / Facebook</span>
+            <strong>Coming soon</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>Phyllie’s Foodie’s</strong></p>
+      <p>Fresh-baked breads &amp; jams coming soon</p>
+      <p>&copy; 2026 Phyllie’s Foodie’s. Made with care.</p>
+    </footer>
+  </body>
+</html>
