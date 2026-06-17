@@ -19,6 +19,7 @@
   <body>
     <header class="site-header" aria-label="Phyllie’s Foodie’s site header">
       <a class="brand" href="#top" aria-label="Phyllie’s Foodie’s home">
+        <!-- Future logo slot: assets/logo/phyllies-logo.png. Keep the PF badge/text fallback until the logo is uploaded. -->
         <span class="brand-mark" aria-hidden="true">PF</span>
         <span>Phyllie’s Foodie’s</span>
       </a>
@@ -79,48 +80,53 @@
             <p>Soft, cozy loaves made for breakfast tables, care packages, and anytime a warm slice sounds right.</p>
           </div>
           <div class="bread-grid">
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Best Banana Bread" data-image="assets/breads/best-banana-bread.jpg">
               <div class="bread-art banana" role="img" aria-label="Golden banana bread placeholder illustration">🍌</div>
               <div class="card-body">
                 <span class="tag">Classic</span>
                 <h4>Best Banana Bread</h4>
                 <p>A soft banana loaf with rich flavor, a tender crumb, and that homemade comfort people come back for.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Banana Pineapple Bread" data-image="assets/breads/banana-pineapple-bread.jpg">
               <div class="bread-art pineapple" role="img" aria-label="Banana pineapple bread placeholder illustration">🍍</div>
               <div class="card-body">
                 <span class="tag">Tropical Twist</span>
                 <h4>Banana Pineapple Bread</h4>
                 <p>A bright banana loaf with sweet pineapple baked in for a sunny, playful slice.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Applesauce Bread" data-image="assets/breads/applesauce-bread.jpg">
               <div class="bread-art applesauce" role="img" aria-label="Applesauce bread placeholder illustration">🍎</div>
               <div class="card-body">
                 <span class="tag">Cozy Classic</span>
                 <h4>Applesauce Bread</h4>
                 <p>A tender, lightly spiced loaf with comforting applesauce flavor in every bite.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Best Lemon Loaf" data-image="assets/breads/best-lemon-loaf.jpg">
               <div class="bread-art lemon" role="img" aria-label="Lemon loaf placeholder illustration">🍋</div>
               <div class="card-body">
                 <span class="tag">Bright Favorite</span>
                 <h4>Best Lemon Loaf</h4>
                 <p>A soft, sweet loaf with cheerful lemon flavor and a fresh bakery feel.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Homemade Cherry Bread" data-image="assets/breads/homemade-cherry-bread.jpg">
               <div class="bread-art cherry" role="img" aria-label="Cherry bread placeholder illustration">🍒</div>
               <div class="card-body">
                 <span class="tag">Sweet Favorite</span>
                 <h4>Homemade Cherry Bread</h4>
                 <p>A soft homemade loaf with cherry flavor baked into a sweet, shareable treat.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
           </div>
@@ -132,30 +138,33 @@
             <p>Warm fruit-and-nut flavors with a nostalgic, homemade feel.</p>
           </div>
           <div class="bread-grid">
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Apple Pie Bread" data-image="assets/breads/apple-pie-bread.jpg">
               <div class="bread-art apple-pie" role="img" aria-label="Apple pie bread placeholder illustration">🥧</div>
               <div class="card-body">
                 <span class="tag">Apple Favorite</span>
                 <h4>Apple Pie Bread</h4>
                 <p>A cozy apple-spiced bread inspired by the comfort of a classic apple pie.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Maple Apple Nut Bread" data-image="assets/breads/maple-apple-nut-bread.jpg">
               <div class="bread-art maple" role="img" aria-label="Maple apple nut bread placeholder illustration">🍁</div>
               <div class="card-body">
                 <span class="tag">Maple Kissed</span>
                 <h4>Maple Apple Nut Bread</h4>
                 <p>Apple, maple, and nutty texture baked into a warm breakfast-style loaf.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Walnut Date Bread" data-image="assets/breads/walnut-date-bread.jpg">
               <div class="bread-art walnut" role="img" aria-label="Walnut date bread placeholder illustration">🌰</div>
               <div class="card-body">
                 <span class="tag">Nostalgic Loaf</span>
                 <h4>Walnut Date Bread</h4>
                 <p>Rich dates and walnuts come together in a hearty, old-school favorite.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
           </div>
@@ -167,31 +176,34 @@
             <p>Playful flavors, seasonal comfort, and special loaves from Phyllie’s kitchen.</p>
           </div>
           <div class="bread-grid">
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Pumpkin Bread" data-image="assets/breads/pumpkin-bread.jpg">
               <div class="bread-art pumpkin" role="img" aria-label="Pumpkin bread placeholder illustration">🎃</div>
               <div class="card-body">
                 <span class="tag">Seasonal</span>
                 <h4>Pumpkin Bread</h4>
                 <p>A warm seasonal favorite with comforting spice and a soft, tender crumb.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Pumpkin Bread with Streusel Topping and Maple Glaze" data-image="assets/breads/pumpkin-streusel-maple-glaze.jpg">
               <div class="bread-art pumpkin-streusel" role="img" aria-label="Pumpkin bread with streusel and maple glaze placeholder illustration">🍯</div>
               <div class="card-body">
                 <span class="tag">Special Finish</span>
                 <h4>Pumpkin Bread with Streusel Topping and Maple Glaze</h4>
                 <p>Cozy pumpkin bread topped with sweet streusel and finished with maple glaze.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card designer-card">
+            <article class="bread-card designer-card" data-bread-name="Banana Split Bread" data-image="assets/breads/banana-split-bread.jpg">
               <div class="ribbon">Designer’s Corner</div>
               <div class="bread-art split" role="img" aria-label="Banana split bread placeholder illustration with cherry and chocolate accents">🍒</div>
               <div class="card-body">
                 <span class="tag">Designer’s Corner</span>
                 <h4><span class="heading-line">Designer’s Corner:</span><span class="heading-line">Banana Split Bread</span></h4>
                 <p>A playful dessert-style loaf with banana, cherries, pineapple, and chocolate.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
           </div>
@@ -203,30 +215,33 @@
             <p>Classic homemade loaves for slicing, sharing, pairing with butter, or enjoying with jams coming soon.</p>
           </div>
           <div class="bread-grid">
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Yeast Bread" data-image="assets/breads/yeast-bread.jpg">
               <div class="bread-art yeast" role="img" aria-label="Homemade yeast bread placeholder illustration">🍞</div>
               <div class="card-body">
                 <span class="tag">Homemade Loaf</span>
                 <h4>Yeast Bread</h4>
                 <p>A traditional homemade loaf, perfect for slicing, sharing, and pairing with butter or jam.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="Dutch Oven Bread" data-image="assets/breads/dutch-oven-bread.jpg">
               <div class="bread-art dutch" role="img" aria-label="Rustic Dutch oven bread placeholder illustration">🥖</div>
               <div class="card-body">
                 <span class="tag">Rustic Loaf</span>
                 <h4>Dutch Oven Bread</h4>
                 <p>A rustic round loaf with a golden crust and a soft center.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
 
-            <article class="bread-card">
+            <article class="bread-card" data-bread-name="French Bread" data-image="assets/breads/french-bread.jpg">
               <div class="bread-art french" role="img" aria-label="French bread placeholder illustration">🥖</div>
               <div class="card-body">
                 <span class="tag">Fresh Favorite</span>
                 <h4>French Bread</h4>
                 <p>A simple, fresh-baked favorite with a crisp outside and soft inside.</p>
+                <button class="bread-order-button" type="button">Order / Ask Availability</button>
               </div>
             </article>
           </div>
@@ -316,5 +331,34 @@
       <p>Fresh-baked breads &amp; jams coming soon</p>
       <p>&copy; 2026 Phyllie’s Foodie’s. Made with care.</p>
     </footer>
+
+    <div class="modal-backdrop" id="bread-inquiry-modal" hidden>
+      <div class="inquiry-modal" role="dialog" aria-modal="true" aria-labelledby="inquiry-title" aria-describedby="inquiry-description">
+        <button class="modal-close" type="button" aria-label="Close inquiry form">×</button>
+        <p class="eyebrow">Bread inquiry</p>
+        <h2 id="inquiry-title">Ask about <span id="selected-bread-name">this bread</span></h2>
+        <p id="inquiry-description">This placeholder form does not send, collect, or store your information yet.</p>
+        <form id="bread-inquiry-form" class="inquiry-form">
+          <label for="inquiry-name">Name</label>
+          <input id="inquiry-name" name="name" type="text" autocomplete="name" />
+
+          <label for="inquiry-contact">Phone or Email</label>
+          <input id="inquiry-contact" name="contact" type="text" autocomplete="email" />
+
+          <label for="inquiry-quantity">Quantity / Loaves requested</label>
+          <input id="inquiry-quantity" name="quantity" type="number" min="1" inputmode="numeric" />
+
+          <label for="inquiry-date">Preferred date</label>
+          <input id="inquiry-date" name="date" type="date" />
+
+          <label for="inquiry-notes">Notes</label>
+          <textarea id="inquiry-notes" name="notes" rows="4"></textarea>
+
+          <button class="button button-primary" type="submit">Show placeholder message</button>
+        </form>
+        <p class="form-message" id="inquiry-message" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

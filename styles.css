@@ -691,3 +691,133 @@ h4 {
     padding: 1.35rem;
   }
 }
+
+.bread-order-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.72rem 0.95rem;
+  color: var(--chocolate);
+  background: var(--banana);
+  border: 2px solid rgba(91, 53, 31, 0.12);
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.bread-order-button:hover,
+.bread-order-button:focus-visible {
+  transform: translateY(-2px);
+  outline: 3px solid rgba(216, 121, 63, 0.3);
+  outline-offset: 3px;
+  box-shadow: 0 10px 22px rgba(91, 53, 31, 0.12);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(91, 53, 31, 0.54);
+}
+
+.modal-backdrop[hidden] {
+  display: none;
+}
+
+.inquiry-modal {
+  position: relative;
+  width: min(100%, 560px);
+  max-height: min(92vh, 760px);
+  overflow-y: auto;
+  padding: 2rem;
+  background:
+    linear-gradient(160deg, rgba(255, 253, 248, 0.98), rgba(247, 234, 210, 0.98)),
+    radial-gradient(circle at 80% 10%, rgba(246, 200, 95, 0.35), transparent 12rem);
+  border: 1px solid rgba(91, 53, 31, 0.14);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.inquiry-modal h2 {
+  padding-right: 2.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.inquiry-modal p {
+  color: var(--cocoa);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  color: var(--white);
+  background: var(--chocolate);
+  border: 0;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close:focus-visible,
+.inquiry-form input:focus-visible,
+.inquiry-form textarea:focus-visible {
+  outline: 3px solid rgba(216, 121, 63, 0.45);
+  outline-offset: 3px;
+}
+
+.inquiry-form {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.inquiry-form label {
+  font-weight: 900;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  color: var(--chocolate);
+  background: var(--white);
+  border: 1px solid rgba(91, 53, 31, 0.22);
+  border-radius: 16px;
+  font: inherit;
+}
+
+.form-message {
+  margin: 1rem 0 0;
+  padding: 0.9rem 1rem;
+  background: rgba(132, 155, 115, 0.18);
+  border-radius: 18px;
+  font-weight: 900;
+}
+
+.form-message:empty {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .inquiry-modal {
+    padding: 1.35rem;
+    border-radius: 24px;
+  }
+
+  .inquiry-modal h2 {
+    padding-right: 2rem;
+  }
+}
