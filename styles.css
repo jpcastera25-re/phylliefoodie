@@ -135,7 +135,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-family: "Fraunces", Georgia, serif;
   line-height: 1.05;
@@ -156,11 +157,17 @@ h3 {
   font-size: 1.45rem;
 }
 
+h4 {
+  font-size: 1.35rem;
+}
+
 .hero-text,
 .section-heading p,
+.category-heading p,
 .about-section p,
 .jam-copy p,
-.contact-section p {
+.contact-section p,
+.notice-section p {
   font-size: 1.08rem;
 }
 
@@ -347,7 +354,8 @@ h3 {
 
 .menu-section,
 .about-section,
-.contact-section {
+.contact-section,
+.notice-section {
   padding: 5rem 0;
 }
 
@@ -362,6 +370,29 @@ h3 {
   text-align: center;
 }
 
+.menu-category {
+  margin-top: 2.4rem;
+}
+
+.menu-category + .menu-category {
+  margin-top: 3.25rem;
+}
+
+.category-heading {
+  max-width: 780px;
+  margin-bottom: 1rem;
+}
+
+.category-heading h3 {
+  color: var(--chocolate);
+}
+
+.category-heading p {
+  max-width: 720px;
+  margin: 0.55rem 0 0;
+  color: var(--cocoa);
+}
+
 .bread-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -370,7 +401,8 @@ h3 {
 
 .bread-card,
 .contact-card,
-.recipe-card {
+.recipe-card,
+.notice-card {
   background: rgba(255, 253, 248, 0.88);
   border: 1px solid rgba(91, 53, 31, 0.1);
   box-shadow: 0 16px 36px rgba(91, 53, 31, 0.1);
@@ -390,8 +422,28 @@ h3 {
   background: linear-gradient(135deg, #f6d77f, #fdf0c8);
 }
 
-.bread-art.pumpkin {
+.bread-art.pumpkin,
+.bread-art.pumpkin-streusel {
   background: linear-gradient(135deg, #d8793f, #ffd0a6);
+}
+
+.bread-art.pineapple,
+.bread-art.lemon {
+  background: linear-gradient(135deg, #f6c85f, #fff4b8);
+}
+
+.bread-art.applesauce,
+.bread-art.apple-pie,
+.bread-art.maple {
+  background: linear-gradient(135deg, #bd6f44, #f7c88a);
+}
+
+.bread-art.cherry {
+  background: linear-gradient(135deg, #a84f4f, #ffd2c2);
+}
+
+.bread-art.walnut {
+  background: linear-gradient(135deg, #8a5a35, #ddb47a);
 }
 
 .bread-art.yeast,
@@ -424,7 +476,7 @@ h3 {
 
 .card-body p {
   margin-bottom: 0;
-  color: var(--cocoa);
+  color: var(--chocolate);
 }
 
 .designer-card {
@@ -434,6 +486,10 @@ h3 {
 .designer-card .ribbon {
   top: 0.85rem;
   right: 0.85rem;
+}
+
+.heading-line {
+  display: block;
 }
 
 .jam-banner {
@@ -521,6 +577,31 @@ h3 {
   font-size: 1.15rem;
 }
 
+.notice-card {
+  padding: 2rem;
+  background:
+    linear-gradient(135deg, rgba(255, 253, 248, 0.94), rgba(247, 234, 210, 0.94)),
+    radial-gradient(circle at 92% 10%, rgba(246, 200, 95, 0.3), transparent 14rem);
+  border-radius: var(--radius-lg);
+}
+
+.notice-card h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.notice-card p {
+  max-width: 900px;
+  color: var(--chocolate);
+}
+
+.required-statement {
+  padding: 1rem 1.15rem;
+  background: rgba(246, 200, 95, 0.24);
+  border-left: 5px solid var(--pumpkin);
+  border-radius: 18px;
+  font-weight: 900;
+}
+
 .site-footer {
   padding: 2rem 1rem 2.5rem;
   color: #fff5e7;
@@ -587,7 +668,8 @@ h3 {
   .hero,
   .menu-section,
   .about-section,
-  .contact-section {
+  .contact-section,
+  .notice-section {
     padding: 3rem 0;
   }
 
